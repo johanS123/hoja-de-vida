@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Johan Rodriguez</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="barra">
+      <div class="logo">JOHAN<span>.DEV</span></div>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="experiencia.html">Experiencia</a>
+        <a href="educacion.html">Educación</a>
+        <a href="habilidades.html">Habilidades</a>
+        <a href="contacto.html" class="activo">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="tarjeta">
+      <h1>Contacto</h1>
+      <p>Ubicación: <strong>Bogotá, Colombia</strong></p>
+      <p>Correo: <a href="mailto:TU_CORREO@ejemplo.com">TU_CORREO@ejemplo.com</a></p>
+      <p>GitHub: <a href="https://github.com/TU_USUARIO" target="_blank" rel="noopener">github.com/TU_USUARIO</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/TU_PERFIL" target="_blank" rel="noopener">linkedin.com/in/TU_PERFIL</a></p>
+    </section>
+
+    <section class="tarjeta">
+      <h2>Envíame un mensaje</h2>
+      <p>
+        Formulario de ejemplo con método <code>GET</code>. Al enviarlo, los datos viajan en la URL.
+        GitHub Pages es hosting estático, así que no procesa <code>POST</code>.
+      </p>
+      <form action="contacto.html" method="get">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="correo">Correo</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="motivo">Motivo</label>
+        <select id="motivo" name="motivo">
+          <option>Oferta laboral</option>
+          <option>Proyecto freelance</option>
+          <option>Otro</option>
+        </select>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+        <button class="boton" type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Johan Stiven Rodriguez Triana · <a href="index.html">Volver al inicio</a></p>
+  </footer>
+</body>
+</html>
